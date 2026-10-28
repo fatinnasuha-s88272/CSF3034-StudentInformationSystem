@@ -14,5 +14,14 @@ public class StudentInformationSystem {
         System.out.printf("Mark 1: %.1f%n", mark1);
         System.out.printf("Mark 2: %.1f%n", mark2);
         System.out.printf("Total mark: %.1f / 200%n", total);
+
+        // Example thresholds: the lab sheet does not specify exact grade boundaries.
+        if (total >= 160.0) {
+            System.out.println("Result: Excellent");
+        } else if (total >= 120.0) {
+            System.out.println("Result: Good");
+        } else {
+            System.out.println("Result: Needs Improvement");
+        }
     }
 }
